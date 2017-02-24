@@ -1,0 +1,54 @@
+#viewactivitytext{
+height: auto;
+width:auto;
+display: block;
+text-align:left;
+font-size: 13px;
+line-height: 14px;
+padding: 0px 10px 10px 10px;
+border:none;
+background:none;
+}
+img.activitytext_image{
+
+margin-left: -23px;
+width: 30px;
+height: 30px;
+text-align: left;
+}
+#viewactivitytextwider{
+height: auto;
+width:auto;
+display: block;
+text-align:left;
+font-size: 13px;
+line-height: 14px;
+padding: 0px 10px 10px 10px;
+border:none;
+background:none;
+}
+#editactivitytext{
+
+height: auto;
+width:auto;
+display: block;
+text-align:left;
+font-size: 13px;
+line-height: 14px;
+padding: 0px 10px 10px 10px;
+border:none;
+background:none;
+}
+#editactivitytextwider{
+height: auto;
+width:auto;
+display: block;
+text-align:left;
+font-size: 13px;
+line-height: 14px;
+padding: 0px 10px 10px 10px;
+border:none;
+background:none;
+}
+
+

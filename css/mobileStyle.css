@@ -1,0 +1,56 @@
+#mobile { width: 780px;
+	float: left;
+	margin-bottom: 150px; }
+
+#mobile #mobiletop { width: 617px;
+	height: 97px;
+	margin-left: 85px; }
+	
+#mobile #mobilemain { width: 780px; }
+
+#mobile .mobilepiece { float: left; }
+
+#mobile #mobile_characteristics { width: 190px;
+	height: 205px;
+	background: url(images/mobile/mobile5_characteristics.png) no-repeat; }
+	
+#mobile #mobile_interactions { width: 205px;
+	height: 203px;
+	background: url(images/mobile/mobile5_interactions.png) no-repeat; }
+	
+#mobile #mobile_functions { width: 191px;
+	height: 198px;
+	margin-left: 3px;
+	background: url(images/mobile/mobile5_functions.png) no-repeat; }
+	
+#mobile #mobile_lifecycle { width: 216px;
+	height: 178px;
+	margin-left: -30px;
+	background: url(images/mobile/mobile5_lifecycle.png) no-repeat; }
+
+#mobile .mobileweight { width: 122px;
+	height: 58px; 
+	display: none;
+	position: relative; }
+
+#mobile #mobile_weight1 { width: 101px;
+	margin-top: 210px;
+	margin-left: 90px;
+	background: url(images/mobile/mobile5_w1.png) no-repeat; }
+
+#mobile #mobile_weight2 { margin-top: 220px;
+	margin-left: 40px;
+	background: url(images/mobile/mobile5_w2.png) no-repeat; }
+	
+#mobile #mobile_weight3 { margin-top: 190px;
+	margin-left: 50px;
+	background: url(images/mobile/mobile5_w3.png) no-repeat; }
+	
+#mobile #mobile_weight4 { width: 112px;
+	margin-top: 215px;
+	margin-left: 75px;
+	background: url(images/mobile/mobile5_w4.png) no-repeat; }
+	
+#mobile #mobile_weight5 { margin-top: 210px;
+	margin-left: 75px;
+	background: url(images/mobile/mobile5_w5.png) no-repeat; }

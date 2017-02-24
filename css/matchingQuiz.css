@@ -1,0 +1,72 @@
+.droppableQuiz {
+    float: left;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #999;
+    margin: 10px;
+    text-align:center;
+    font-weight:bold;
+}
+
+.droppableQuiz div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -30px;
+    margin-top: -15px;
+}
+
+.draggableQuiz {
+    width: 150px;
+    height: 150px;
+    float: left;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #999;
+    margin: 10px;
+    text-align:center;
+    font-weight:bold;
+}
+
+.draggableQuiz div{
+position: absolute;
+top: 50%;
+left: 50%;
+margin-left: -30px;
+margin-top: -15px;
+}  
+
+.quiz1 { background-color: #c0b79c; 
+display: inline-block;
+
+    }
+.quiz2{ background-color: #c1b07e;
+display: inline-block;
+
+    }
+.quiz3 { background-color: #c2ab67; 
+display: inline-block;
+}
+.quiz4{ background-color: #c2a85a; 
+display: inline-block;
+
+    }
+.quiz5{ background-color: #c3a650; display: inline-block;
+
+    }
+.quiz6{ background-color: #c3a13e; display: inline-block;
+
+    }
+.quiz7{ background-color: #a58016; 
+display: inline-block;
+
+    }
+
+.quiz_item_text{
+font-size: 13px;
+line-height: 14px;
+text-align: left;
+margin: 5px 5px 5px 5px;
+}

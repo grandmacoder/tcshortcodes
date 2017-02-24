@@ -1,0 +1,59 @@
+.draggable_container{float:left;width:200px;margin-left:55px;margin-right: 130px;border:5px solid #054d77;}
+.outerwrapper {
+	    width: 100%;
+	    height: 100%;
+	    display: inline-block;
+	}      
+		 #droppable-1 { 
+       width: 184px; 
+	   height: 200px;
+	  float: left; 
+          border: 5px solid #054d77;
+	   background:-o-linear-gradient(bottom, #ffffff 5%, #054d77 100%);	
+	   background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #054d77) );
+	   background:-moz-linear-gradient( center top, #ffffff 5%, #054d77 100% );
+	   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#054d77");	
+	   background: -o-linear-gradient(top,#ffffff,#003f7f);
+           background-color:#ffffff;	   
+	  }
+	#droppable-2 { 
+       width: 184px; 
+	   height: 200px;
+	   margin-left: 60px;
+	   float: left; 
+       border: 5px solid #054d77;
+	   background:-o-linear-gradient(bottom, #ffffff 5%, #c17400 100%);	
+	   background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #c17400) );
+	   background:-moz-linear-gradient( center top, #ffffff 5%, #c17400 100% );
+	   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#c17400");	
+	   background: -o-linear-gradient(top,#ffffff,#003f7f);
+       background-color:#ffffff;
+	 }
+	.draggable_heading{
+	font-size: 22px;
+	font-weight:bold;
+	font-family: Calibri, Arial Narrow, Optima, Tahoma;
+	}
+
+
+	.draggable_submit{
+	font-size: 15px;
+	font-family: Calibri, Arial Narrow, Optima, Tahoma;
+	font-weight: bold;
+	}
+	.draggable_message{
+	width: 50%
+	margin: 15px 15px 15px 15px; 
+	font-size: 18px;
+	font-family: Calibri, Arial Narrow, Optima, Tahoma;
+	font-weight: bold;
+	}
+	#list1_selected{display:none;}	
+	#list2_selected{display:none;}
+
+      .ui-widget-content-hidden{
+      width:200px;
+      height:30px;
+      background-image: url("/wp-content/originalSiteAssets/images/modules/hiddenWhiteBG.png");
+      background-repeat: no-repeat;
+      }

@@ -1,0 +1,54 @@
+#mobile { width: 780px;
+	float: left; 
+	padding-bottom: 135px;
+}
+	
+#mobile #mobiletop { width: 617px;
+	height: 97px;
+	margin-left: 85px; }
+	
+	
+#mobile #mobilemain { width: 780px; }
+
+#mobile .mobilepiece { float: left; }
+
+#mobile #mobile_characteristics { 
+    width: 190px;
+	height: 205px;
+	background: url(/wp-content/originalSiteAssets/images/modules/familymobile/mobile5_characteristics.png) no-repeat; }
+	
+#mobile #mobile_interactions { width: 205px;
+	height: 203px;
+	background: url(/wp-content/originalSiteAssets/images/modules/familymobile/mobile5_interactions.png) no-repeat; }
+	
+#mobile #mobile_functions { width: 191px;
+	height: 198px;
+	margin-left: 3px;
+	background: url(/wp-content/originalSiteAssets/images/modules/familymobile/mobile5_functions.png) no-repeat; 
+	}
+	
+#mobile #mobile_lifecycle { width: 216px;
+	height: 178px;
+	margin-left: -30px;
+	background: url(/wp-content/originalSiteAssets/images/modules/familymobile/mobile5_lifecycle.png) no-repeat; }
+
+.mobile_functions_weight{
+left:-400px;
+top: 350px;
+position:absolute;
+}
+.mobile_interactions_weight{
+left:-400px;
+top: 350px;
+position:absolute;
+}
+.mobile_characteristics_weight{
+left:-400px;
+top: 350px;
+position:absolute;
+}
+.mobile_lifestyle_weight{
+left:-400px;
+top: 350px;
+position:absolute;
+}
