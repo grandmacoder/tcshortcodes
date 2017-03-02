@@ -424,6 +424,7 @@ $("#lernchecklistresults" ).dialog({
             resizable: true,
             modal: true,
 			width:600,
+			position: { my: "left top+50", at: "left top", of: window },
     });
     return false;
 });
@@ -433,18 +434,21 @@ e.preventDefault();
 $("#lernchallenges" ).dialog({
             resizable: true,
             modal: true,
-			width:600,
+			width:550,
+			 position: { my: "left top+50", at: "left top", of: window },
     });
     return false;
 });
 
-/*dialog challenges list*/
+/*dialog nest steps list*/
 $('a.lernnextsteps').click(function(e){
 e.preventDefault();
 $("#lernnextsteps" ).dialog({
             resizable: true,
             modal: true,
-			width:600,
+			width:550,
+			position: { my: "left top+50", at: "left top", of: window },
+
     });
     return false;
 
