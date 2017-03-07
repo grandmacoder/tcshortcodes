@@ -411,7 +411,7 @@ global $wpdb;
 							  else{
 							 $avatar_path ='http://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=32&amp;d=mm&amp;r=g&amp;forcedefault=1';
 							  }
-						     $content.="<p class=resizablep><a href='#'><img src='". $avatar_path."'><br>". $user_firstname ." " . $user_lastname ."</a><br>" .$useractivity->activity_value  ."</p><div style='clear:both;'></div>" ;
+						     $content.="<p class=resizablep><a href='#'><img src='". $avatar_path."'><br>". $user_firstname ." " . $user_lastname ."</a><br>" .stripslashes($useractivity->activity_value) ."</p><div style='clear:both;'></div>" ;
              }
 			 $content.="</div>";
 	$content.="</div></div>";
@@ -981,7 +981,7 @@ $content.="<input id=post_id type=hidden name=post_id value=". $postID .">";
 $content.="<input id=num_checklist_items type=hidden name=num_checklist_items value=". $numChecklistItems .">";
 $content.= "<div class=compare_submit>
          <p></p>
-         Click to save your checklist. <input type=button id='btn_submit_items' name='submit_items' value='Save'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src='/wp-content/uploads/2014/06/printer.png' class='printchecklist' title='Print my checklist'>
+         <input type=button id='btn_submit_items' name='submit_items' value='Save'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src='/wp-content/uploads/2014/06/printer.png' class='printchecklist' title='Print my checklist'>
          </div>";
 $content.="</form></div>";
 return $content;

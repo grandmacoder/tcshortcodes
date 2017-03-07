@@ -131,7 +131,7 @@ $( "#filevalidatearea" ).html("Please wait while your file uploads, this might t
 		cache: false,
 		processData: false,
 		success: function(response) {
-			if(response['attachment_id'] > 0 ){
+		    if(response['attachment_id'] > 0 ){
             $("#filevalidatearea" ).html("Your file was uploaded successfully. Thank you.");
 			$('#share-file-upload').val('');
 			 var appendtotable="<tr><td><abbr title='"+ response['userfirstname'] + " "+response['userlastname']+"' rel='tooltip'><img src='"+response['avatarpath']+"' height=30 width=30></abbr></td><td><p>"+ response['resourcecategory']+"</p></td><td><li class='"+response['linkstyle']+"'><a href='"+response['resourcelink']+"' title='"+response['resourcetitle']+"' target=_blank >"+response['resourcetitle']+"</a></li></td><td><p>"+response['resourcedescription']+"</p></td><td><div class='resource-vote-result'><span class="+response['resourcepostid']+">0</span></div><span class='resource-vote-link' data-resourceid="+response['resourcepostid']+"><i class='fa fa-thumbs-up fa-flip-horizontal resource-thumbs-up' ></i></span></td></tr>";

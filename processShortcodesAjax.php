@@ -96,7 +96,7 @@ if(isset($_FILES["share-file-upload"])){
     if(strpos($endStr,'doc')){$link_style="doc-ico";}
 		elseif(strpos($endStr,'pdf')){$link_style="pdf-ico";}
 			elseif(strpos($endStr,'pps')){$link_style="pps-ico";}
-				else{$link_style="web-ico";}      
+		//		else{$link_style="web-ico";}      
 	//create a simple link with 
 	// Create post object
     $simplelink_post = array(
@@ -125,8 +125,7 @@ if(isset($_FILES["share-file-upload"])){
 	 else{
 	 $avatarpath ='http://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=32&amp;d=mm&amp;r=g&amp;forcedefault=1';
 	}
-  $resourcedescription =stripslashes($resourcedescription);
-	//create html for appending and return to jquery
+	$resourcedescription =stripslashes($resourcedescription);
 	$returnvars = array(
 	    'attachment_id'=>$attachment_id,
 		'resourcecategory' =>$category_name,
@@ -139,7 +138,8 @@ if(isset($_FILES["share-file-upload"])){
 		'avatarpath' => $avatarpath,
 		'linkstyle'=>$link_style,
 		);
-	print json_encode($returnvars);
+		print json_encode($returnvars);
+		exit();
 	}
 }
 if (isset($_FILES["file-upload"])){
