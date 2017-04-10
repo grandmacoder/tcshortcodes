@@ -1,0 +1,71 @@
+.draggable_container{float:left;border:1px solid #054d77;width:100%;}
+.outerwrapper {
+	    width: 100%;
+	    height: 100%;
+	    display: inline-block;
+	}    
+	   #droppable-1 { 
+       width: 39%; 
+	   height:100px;
+	   float: left; 
+       border:1px solid #054d77;
+       padding-left: 15px;   
+       background: #FFF;
+       margin-left: 20px;	   
+	  }
+	  #droppable-2 { 
+       width: 39%; 
+	   height:100px;
+	   float: right;
+	   border:1px solid #054d77;
+	   padding-left: 15px;
+	   background: #FFF;
+	   margin-right: 20px;
+	 }
+	 #horizontal_matrix_headings{
+		padding-bottom: -20px;
+        margin: 0;
+		width:100%;
+		overflow: hidden;
+	 }
+	.draggable_heading_1{
+	font-size: 18px;
+	font-weight:bold;
+	font-family: Calibri, Arial Narrow, Optima, Tahoma;
+    width: 50%;
+	text-align:center; 
+	float:left;
+	}
+	.draggable_heading_2{
+	font-size: 18px;
+	font-weight:bold;
+	font-family: Calibri, Arial Narrow, Optima, Tahoma;
+	width: 50%;
+	text-align:center; 
+	float:right;
+	}
+   .draggable_submit{
+	font-size: 15px;
+	font-family: Calibri, Arial Narrow, Optima, Tahoma;
+	font-weight: bold;
+	float:right;
+	}
+	.draggable_message{
+	width: 50%
+	margin: 15px 15px 15px 15px; 
+	font-size: 18px;
+	font-family: Calibri, Arial Narrow, Optima, Tahoma;
+	font-weight: bold;
+	}
+	 .ui-widget-content{
+		display: inline-block;  
+	  }
+	#list1_selected{display:none;}	
+	#list2_selected{display:none;}
+    .ui-widget-content-hidden{
+      width:200px;
+      height:30px;
+      background-image: url("/wp-content/originalSiteAssets/images/modules/hiddenWhiteBG.png");
+      background-repeat: no-repeat;
+      }
+	 

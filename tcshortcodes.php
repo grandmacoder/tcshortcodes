@@ -52,6 +52,7 @@ add_shortcode('createTimer', 'tcs_create_timer');
 //these shortcodes are basically widget like items for interactive components used on learning modules
 add_shortcode('createMatchingMatrix', 'tcs_create_matching_matrix');
 add_shortcode('createVerticalMatrix', 'tcs_create_vertical_matrix');
+add_shortcode('createHorizontalMatrix', 'tcs_create_horizontal_matrix');
 add_shortcode('createCheckboxMatrix', 'tcs_create_checkbox_matrix');
 add_shortcode('createMatchingQuiz','tcs_create_matching_quiz');
 add_shortcode('toggleReadMore', 'tcs_toggle_read_more_content');
@@ -1177,6 +1178,41 @@ $content.= "<div class=draggable_message></div>
      <div id='droppable-1' class='ui-widget-header'></div>
      <div id='droppable-2' class='ui-widget-header'></div>";
 
+return $content;
+}
+
+function tcs_create_horizontal_matrix($atts, $content=null){
+global $wpdb;
+$matrix_name_class = $atts['name'];
+$matrixrows = $wpdb->get_results("Select * from wp_course_matrix where matrix_name='".$matrix_name_class."' order by item_id", OBJECT);
+$columnheading1= $wpdb->get_var("Select heading from wp_course_matrix where matrix_name='".$matrix_name_class."' and column_number = 1 LIMIT 0,1");
+$columnheading2= $wpdb->get_var("Select heading from wp_course_matrix where matrix_name='".$matrix_name_class."' and column_number = 2 LIMIT 0,1");
+$content.="<link rel='stylesheet' href='http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css'>";
+$content.="<link rel='stylesheet' type='text/css' href='". get_site_url(). "/wp-content/plugins/tcshortcodes/css/horizontalMatchingStyle.css'>";
+$content.="<script src='//code.jquery.com/jquery-1.10.2.js'></script>";
+$content.="<script src='//code.jquery.com/ui/1.11.1/jquery-ui.js'></script>";
+$content.="<script src='". get_site_url(). "/wp-content/plugins/tcshortcodes/js/jquery.horizontalmatching.js'></script>";
+$content.="<div id='matrix_name' class='". $matrix_name_class."'></div>";
+$content.= "<div class=draggable_message></div>
+   
+    <div id ='list1_selected'></div>
+    <div id ='list2_selected'></div>
+    <div class='draggable_container'>";
+   //get the content from the db for the matrix items
+   $i=1;
+   foreach ($matrixrows as $item){
+         $content.="<div id='draggable-". $i."' class='ui-widget-content'>" . $item->item_text ."</div>";
+   $i++;
+   }
+   //add an invisible one that will keep the width when the jquery snaps to grid on the last item moved from the list
+    $content.="<div id='draggable-empty class='ui-widget-content-hidden'></div>";
+    $content.="</div>
+	<div id=horizontal_matrix_headings><div class='draggable_heading_1'>".$columnheading1 ."</div><div class='draggable_heading_2'>".$columnheading2 ."</div></div>
+     <div id='droppable-1'></div>
+	 
+     <div id='droppable-2'></div>
+	 <div style='clear:both;'></div>
+   <div class=draggable_submit><br><input type=button id='btn_submit_items' name='submit_items' value='Check your answers!'></div>";
 return $content;
 }
 

@@ -7,6 +7,7 @@
     margin: 10px;
     text-align:center;
     font-weight:bold;
+	font-size:15px;
 }
 
 .droppableQuiz div {
@@ -38,28 +39,28 @@ margin-left: -30px;
 margin-top: -15px;
 }  
 
-.quiz1 { background-color: #c0b79c; 
+.quiz1 { background-color: #d9efd9; 
 display: inline-block;
 
     }
-.quiz2{ background-color: #c1b07e;
+.quiz2{ background-color: #d9efd9;
 display: inline-block;
 
     }
-.quiz3 { background-color: #c2ab67; 
+.quiz3 { background-color: #d9efd9; 
 display: inline-block;
 }
-.quiz4{ background-color: #c2a85a; 
+.quiz4{ background-color: #d9efd9; 
 display: inline-block;
 
     }
-.quiz5{ background-color: #c3a650; display: inline-block;
+.quiz5{ background-color: #d9efd9; display: inline-block;
 
     }
-.quiz6{ background-color: #c3a13e; display: inline-block;
+.quiz6{ background-color: #d9efd9; display: inline-block;
 
     }
-.quiz7{ background-color: #a58016; 
+.quiz7{ background-color: #d9efd9; 
 display: inline-block;
 
     }
