@@ -102,7 +102,7 @@ $wid=$atts['wid'];
 $content ='<script src="https://cdnapisec.kaltura.com/p/368641/sp/36864100/embedIframeJs/uiconf_id/36818192/partner_id/368641?entry_id='.$entry_id.'&playerId=kaltura_player_1469023199"></script>
 <div style="width: 75%; height: auto; display: inline-block;position: relative;"> 
 <div id="dummy" style="margin-top: 56.25%;"></div>
-<div id="kaltura_player_1469023199" style="width:100%; height: 95%; position:absolute;top:0;left:0;left: 0;right: 0;" itemprop="video" itemscope itemtype="http://schema.org/VideoObject" >
+<div id="kaltura_player_1469023199" style="width:100%; height: 95%; position:absolute;top:0;left:0;left: 0;right: 0;" itemprop="video" itemscope itemtype="https://schema.org/VideoObject" >
 </div>
 </div>	
 <script>
@@ -166,7 +166,7 @@ if ( $attachments ) {
 		      $avatar_path = $avatar_post->guid;
 		     }
 		   else{
-		     $avatar_path ='http://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=32&amp;d=mm&amp;r=g&amp;forcedefault=1';
+		     $avatar_path ='https://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=32&amp;d=mm&amp;r=g&amp;forcedefault=1';
 		    }
 			$resourcepostid = $attachment->ID;
 		    $resourcelink =get_the_guid($attachment->ID);
@@ -268,7 +268,7 @@ $resources = $wpdb->get_results($wpdb->prepare("select post_author, ID,post_titl
 		 $avatar_path = $avatar_post->guid;
 		}
 		else{
-		$avatar_path ='http://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=32&amp;d=mm&amp;r=g&amp;forcedefault=1';
+		$avatar_path ='https://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=32&amp;d=mm&amp;r=g&amp;forcedefault=1';
 		}
 	$resourcepostid = $resource->ID;
 	$resourcelink = get_post_meta($resource->ID, 'web_address', true);
@@ -410,7 +410,7 @@ global $wpdb;
 							  $avatar_path = $avatar_post->guid;
 							  }
 							  else{
-							 $avatar_path ='http://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=32&amp;d=mm&amp;r=g&amp;forcedefault=1';
+							 $avatar_path ='https://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=32&amp;d=mm&amp;r=g&amp;forcedefault=1';
 							  }
 						     $content.="<p class=resizablep><a href='#'><img src='". $avatar_path."'><br>". $user_firstname ." " . $user_lastname ."</a><br>" .stripslashes($useractivity->activity_value) ."</p><div style='clear:both;'></div>" ;
              }
@@ -472,7 +472,7 @@ $matches=0;
 							  $avatar_path = $avatar_post->guid;
 							  }
 							  else{
-							 $avatar_path ='http://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=32&amp;d=mm&amp;r=g&amp;forcedefault=1';
+							 $avatar_path ='https://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=32&amp;d=mm&amp;r=g&amp;forcedefault=1';
 							  }
 						     $content.="<p><img src='". $avatar_path."'><br>". $user_firstname ." " . $user_lastname ."</a></p>";
 		          }
@@ -1149,7 +1149,7 @@ $matrix_name_class = $atts['name'];
 $matrixrows = $wpdb->get_results("Select * from wp_course_matrix where matrix_name='".$matrix_name_class."' order by item_id", OBJECT);
 $columnheading1= $wpdb->get_var("Select heading from wp_course_matrix where matrix_name='".$matrix_name_class."' and column_number = 1 LIMIT 0,1");
 $columnheading2= $wpdb->get_var("Select heading from wp_course_matrix where matrix_name='".$matrix_name_class."' and column_number = 2 LIMIT 0,1");
-$content.="<link rel='stylesheet' href='http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css'>";
+$content.="<link rel='stylesheet' href='https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css'>";
 $content.="<link rel='stylesheet' type='text/css' href='". get_site_url(). "/wp-content/plugins/tcshortcodes/css/verticalMatchingStyle.css'>";
 $content.="<script src='//code.jquery.com/jquery-1.10.2.js'></script>";
 $content.="<script src='//code.jquery.com/ui/1.11.1/jquery-ui.js'></script>";
@@ -1187,7 +1187,7 @@ $matrix_name_class = $atts['name'];
 $matrixrows = $wpdb->get_results("Select * from wp_course_matrix where matrix_name='".$matrix_name_class."' order by item_id", OBJECT);
 $columnheading1= $wpdb->get_var("Select heading from wp_course_matrix where matrix_name='".$matrix_name_class."' and column_number = 1 LIMIT 0,1");
 $columnheading2= $wpdb->get_var("Select heading from wp_course_matrix where matrix_name='".$matrix_name_class."' and column_number = 2 LIMIT 0,1");
-$content.="<link rel='stylesheet' href='http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css'>";
+$content.="<link rel='stylesheet' href='https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css'>";
 $content.="<link rel='stylesheet' type='text/css' href='". get_site_url(). "/wp-content/plugins/tcshortcodes/css/horizontalMatchingStyle.css'>";
 $content.="<script src='//code.jquery.com/jquery-1.10.2.js'></script>";
 $content.="<script src='//code.jquery.com/ui/1.11.1/jquery-ui.js'></script>";
